@@ -1,0 +1,73 @@
+@import '_AddListForm.scss';
+
+
+body{
+    margin:0;
+    padding:0;
+    height:100vh;
+    font-family: 'Roboto', sans-serif;
+}
+.Application{
+    &__upBar{
+        height:100px;
+        background-color:#8b91c7;
+        .title{
+            font-size: 30px;
+           position: absolute;
+           top:30px;
+           left:60px;
+           color:#dedede;
+        }
+       
+    }
+
+
+    &__sidebar{
+        width:350px;
+        height:92vh;
+        background-color: #f1f1f1;
+        border-right:1px solid #e3e3e3;
+        padding:50px 0;
+        font-size: 25px;
+       
+        .sedebar__menu{
+            margin:0;
+            padding:0 30px;
+            list-style: none;
+            margin-bottom: 60px;
+            
+            .list_btn{
+                //color:#afa7a7; 
+                opacity: 0.4;
+                color:#868686;
+                &:hover{
+                    opacity:1; 
+                }
+            }
+          
+          
+            .menu__li{
+                cursor: pointer;
+                padding:15px 0;  
+                margin-bottom: 5px;
+                display:flex;
+                align-items:flex-start;
+               
+                
+           }
+
+           .li_active{
+                background: #ffff;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+                border-radius:4px;
+                
+           }
+           .menu__icon{
+             
+               padding-right: 10px;
+           }
+            
+            
+        }
+    }
+}
